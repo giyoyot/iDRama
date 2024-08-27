@@ -8,6 +8,16 @@
 :root{
  --primary: #ff3700;
 }
+*::-webkit-scrollbar{
+  width: 7px;
+}
+*::-webkit-scrollbar-track{
+  background-color: #000;
+}
+*::-webkit-scrollbar-thumb{
+  background-color: var(--primary);
+  border-radius: 4px;
+}
 body{
   background: #000000;
   font-family: 'Poppins', sans-serif;
