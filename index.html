@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">iDRama</a>
+    <ul class="nav">
+      <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+      <li><a href="#">Adults</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Trend</a></li>
+      <li><a href="#">My List</a></li>
+    </ul>
+  </header>
+
+  <div class="banner">
+    <div class="content monster active">
+      <img src="images/monster-title.png" alt="" class="movie-title">
+      <h4>
+        <span>2023</span><span><i>13+</i></span><span>2h 7min</span><span>Coming-of-Age | Drama | Thriller</span>
+      </h4>
+      <p>
+        Ketika putranya yang masih kecil, Minato, mulai bertingkah aneh, ibunya merasa ada yang tidak beres...
+      </p>
+      <div class="button">
+        <a href="#" class="play" data-trailer="trailer1">
+          <i class="fa fa-play"></i> Watch Trailer
+        </a>
+      </div>
+    </div>
+    
+    <!-- Trailer Modal -->
+    <div id="trailer1" class="trailer">
+      <video controls class="trailer-video">
+        <source src="video/monster.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <img src="images/close.png" alt="close" class="close" onclick="closeTrailer('trailer1')">
+    </div>
+    
+    <div class="content lovely-runner">
+      <img src="images/lovely-runner.png" alt="" class="movie-title">
+      <h4>
+        <span>2024</span><span><i>13+</i></span><span>16 eps</span><span>Fantasy</span>
+      </h4>
+      <p>
+        Di tengah keputusasaannya, bintang top Sun-jae adalah satu-satunya harapan bagi Im Sol. Namun, suatu hari, dia mendengar berita mengejutkan bahwa Sun Jae telah meninggal secara tragis. Seluruh dunianya terbalik dan dia terbangun sambil menangis, dan menemukan dirinya berada di masa lalu, 15 tahun yang lalu ketika Sun Jae masih hidup. Sol mengambil kesempatan ini dan bertekad melakukan yang terbaik untuk menyelamatkan Sun-jae. Sedangkan dulunya Sun-jae adalah seorang siswa yang hanya mengabdikan dirinya untuk olahraga renang. Tapi bagaimana Sol, yang hingga kemarin bahkan tidak mengetahui keberadaannya, bisa mengetahui namanya?
+      </p>
+      <div class="button">
+        <a href="#" class="play" data-trailer="trailer2">
+          <i class="fa fa-play"></i> Watch Trailer
+        </a>
+      </div>
+    </div>
+
+    <!-- Trailer Modal -->
+    <div id="trailer2" class="trailer">
+      <video controls class="trailer-video">
+        <source src="video/lovely-runner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <img src="images/close.png" alt="close" class="close" onclick="closeTrailer('trailer2')">
+    </div>
+
+    <div class="content the-little-mermaid">
+      <img src="images/the-little-mermaid-title.png" alt="" class="movie-title">
+      <h4>
+        <span>2023</span><span><i>12+</i></span><span>2h 15min</span><span>Romance</span>
+      </h4>
+      <p>
+        Ariel, putri Raja Triton yang bungsu sekaligus yang paling membangkang, mendambakan untuk kenal lebih jauh kehidupan di atas laut, dan ketika sedang berkunjung ke daratan, ia jatuh cinta pada Pangeran Eric yang menawan. Kaum putri duyung dilarang bergaul dengan manusia, namun Ariel merasa harus mengikuti kata hatinya. Lalu ia membuat kesepakatan dengan penyihir jahat, Ursula, yang menjanjikannya pengalaman hidup di daratan, tetapi kesepakatan itu ternyata menaruh nyawanya—serta tahta ayahnya—dalam bahaya.
+      </p>
+      <div class="button">
+        <a href="#" class="play" data-trailer="trailer3">
+          <i class="fa fa-play"></i> Watch Trailer
+        </a>
+      </div>
+      <div class="trailer">
+        <video src="vi.mp4" muted controls="true" autoplay="true"></video>
+        <img src="images/close.png" alt="" class="close" onclick="toogleVideo();">
+      </div>
+    </div>
+
+    <!-- Trailer Modal -->
+    <div id="trailer3" class="trailer">
+      <video controls class="trailer-video">
+        <source src="video/the-little-mermaid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <img src="images/close.png" alt="close" class="close" onclick="closeTrailer('trailer3')">
+    </div>
+
+    <div class="content sweet-home">
+      <img src="images/sweet-home-title.png" alt="" class="movie-title">
+      <h4>
+        <span>2024</span><span><i>13+</i></span><span>8 eps</span><span>Horror | Mystery | Thriller</span>
+      </h4>
+      <p>
+        Melanjutkan kehidupan umat manusia yang terus berubah sejak kehadiran monster di Bumi. Keadaan itu menapaki babak final seiring batas antara para monster dan manusia yang semakin kabur.
+      </p>
+      <div class="button">
+        <a href="#" class="play" data-trailer="trailer4">
+          <i class="fa fa-play"></i> Watch Trailer
+        </a>
+      </div>
+      <div class="trailer">
+        <video src="vi.mp4" muted controls="true" autoplay="true"></video>
+        <img src="images/close.png" alt="" class="close" onclick="toogleVideo();">
+      </div>
+    </div>
+
+    <!-- Trailer Modal -->
+    <div id="trailer4" class="trailer">
+      <video controls class="trailer-video">
+        <source src="video/sweet-home.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <img src="images/close.png" alt="close" class="close" onclick="closeTrailer('trailer4')">
+    </div>
+
+    <div class="carousel-box">
+      <div class="carousel">
+        <div class="carousel-item" onclick="changeBg('bg-monster.png', 'monster');">
+          <img src="images/movies/monster.jpg" alt="">
+        </div>
+        <div class="carousel-item" onclick="changeBg('bg-lovely-runner.png', 'lovely-runner');">
+          <img src="images/movies/lovely-runner.jpeg" alt="">
+        </div>
+        <div class="carousel-item" onclick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');">
+          <img src="images/movies/the-little-mermaid.jpeg" alt="">
+        </div>
+        <div class="carousel-item" onclick="changeBg('bg-sweet-home.png', 'sweet-home');">
+          <img src="images/movies/sweet-home.png" alt="">
+        </div>
+      </div>
+    </div>
+    <ul class="sci">
+      <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+    </ul>
+  </div>
+
+  <div class="movie" id="movie">
+    <h3 class="logo" style="text-align: center; margin-bottom: 3rem;">Movies</h3>
+    <div class="swiper movie-slider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="poster">
+              <img src="images/movies/a-time.png" alt="">
+            </div>
+            <div class="details">
+              <img src="images/1(1).png" class="logo" alt="">
+              <p>Directed by Kim Jin-won</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4/5</span>
+              </div>
+              <div class="tags">
+                <span>Roman</span>
+                <span>Drama</span>
+              </div>
+              <div class="info">
+                <p>Seorang wanita yang tengah berduka secara ajaib melintasi waktu dan kembali ke tahun 1998. Di masa itu, ia bertemu pria yang sangat mirip dengan almarhum kekasihnya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="poster">
+              <img src="images/movies/all-of-us-are-dead.png" alt="">
+            </div>
+            <div class="details">
+              <img src="images/all.png" class="logo" alt="">
+              <p>Directed by Lee Jae-kyoo</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4/5</span>
+              </div>
+              <div class="tags">
+                <span>Horror</span>
+                <span>Zombie</span>
+              </div>
+              <div class="info">
+                <p>Sebuah SMA menjadi titik nol merebaknya wabah virus zombi. Para murid yang terperangkap pun harus berjuang untuk kabur jika tak mau terinfeksi dan berubah menjadi buas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="poster">
+              <img src="images/movies/hometown.png" alt="">
+            </div>
+            <div class="details">
+              <img src="images/hometown.png" class="logo" alt="">
+              <p>Directed by Yu Je-won, Shin Ha-eun</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4/5</span>
+              </div>
+              <div class="tags">
+                <span>Romance</span>
+                <!-- <span>Action</span> -->
+              </div>
+              <div class="info">
+                <p>Seorang dokter gigi dari kota besar membuka praktik di desa kecil tepi laut, rumah bagi si tampan yang serba bisa tetapi bertolak belakang dengannya dalam segala aspek.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="poster">
+              <img src="images/movies/its.png" alt="">
+            </div>
+            <div class="details">
+              <img src="images/its-title.png" class="logo" alt="">
+              <p>Directed by Park Shin-woo</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4/5</span>
+              </div>
+              <div class="tags">
+                <span>Roman</span>
+                <span>Drama</span>
+              </div>
+              <div class="info">
+                <p>Penulis buku anak-anak yang berkepribadian antisosial dan perawat rumah sakit jiwa memulai perjalanan pemulihan emosi yang luar biasa saat takdir mempertemukan keduanya.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="card">
+            <div class="poster">
+              <img src="images/movies/20th.png" alt="">
+            </div>
+            <div class="details">
+              <img src="images/20th-title.png" class="logo" alt="">
+              <p>Directed by Bang Woo-ri</p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <span>4/5</span>
+              </div>
+              <div class="tags">
+                <span>Drama</span>
+                <span>Romance</span>
+              </div>
+              <div class="info">
+                <p>Bercerita tentang anak muda di tahun 1999, seorang gadis remaja memerhatikan seorang cowok di sekolah demi sahabatnya yang terpesona. Lalu, ia sendiri jatuh cinta.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 iDRama | Designed by Yolita Sahertian</p>
+  </footer>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
